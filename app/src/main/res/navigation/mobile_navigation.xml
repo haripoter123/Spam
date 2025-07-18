@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.mytelegramapp.ui.login.LoginFragment"
+        android:label="Вход"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/navigation_sessions"
+        android:name="com.example.mytelegramapp.ui.sessions.SessionsFragment"
+        android:label="Управление сессиями"
+        tools:layout="@layout/fragment_sessions" />
+    <fragment
+        android:id="@+id/navigation_send"
+        android:name="com.example.mytelegramapp.ui.send.SendFragment"
+        android:label="Рассылка"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/navigation_verify"
+        android:name="com.example.mytelegramapp.ui.verify.VerifyFragment"
+        android:label="Проверка сессий"
+        tools:layout="@layout/fragment_verify" />
+</navigation>
